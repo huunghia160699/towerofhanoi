@@ -1,0 +1,53 @@
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f0f0;
+}
+h1 {
+  margin-bottom: 100px;
+  text-align: center;
+}
+
+.pegs {
+  display: flex;
+  gap: 200px;
+  justify-content: space-around;
+  margin: 20px 0;
+}
+
+.peg {
+  width: 10px;
+  height: 250px;
+  background-color: #672b00;
+  position: relative;
+}
+
+.disk {
+  position: absolute;
+  border-radius: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: all 0.2s ease;
+  z-index: 100;
+}
+
+#output {
+  margin-top: 20px;
+  font-size: 18px;
+}
+.pointer img {
+  width: 40px;
+  position: absolute;
+  top: 0;
+  left: 5px;
+  transform: translateX(-50%);
+  transition: all 0.2s ease;
+}
+.pointer {
+  width: 100%;
+  position: relative;
+  height: 50px;
+}
