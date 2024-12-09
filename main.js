@@ -53,7 +53,6 @@ function previewFile() {
     const file = e.target.result;
     const lines = file.split(/\r\n|\n/);
     lines.forEach((line, i) => {
-      console.log(i);
       if ((line != "") & ((i + 1) % 6 == 0)) {
         const cauhoi = {
           question: "",
