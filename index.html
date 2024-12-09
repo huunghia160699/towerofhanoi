@@ -3,21 +3,29 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Tower of Hanoi</title>
     <link rel="stylesheet" href="style.css" />
+    <title>Mobile Quiz App</title>
   </head>
   <body>
-    <div class="container">
-      <h1>Tower of Hanoi</h1>
-      <div class="pointer">
-        <img src="./icon.png" alt="" />
+    <div id="quiz-container">
+      <h1>Quiz App</h1>
+      <input title="s" placeholder="s" type="file" onchange="previewFile()" />
+      <div id="question-counter">
+        <span id="current-question">1</span> /
+        <span id="total-questions"></span>
       </div>
-      <div class="pegs">
-        <div class="peg" id="peg0"></div>
-        <div class="peg" id="peg1"></div>
-        <div class="peg" id="peg2"></div>
-      </div>
+      <div id="question"><p></p></div>
+      <img
+        id="question-image"
+        src=""
+        alt="Question Image"
+        style="display: none"
+      />
+      <div id="options"></div>
+      <button type="button" id="next-button">Next</button>
+      <div id="result" style="display: none"></div>
     </div>
-    <script src="main.js"></script>
+
+    <script src="renderer.js"></script>
   </body>
 </html>
