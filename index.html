@@ -4,16 +4,25 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./style.css" />
-    <title>Mobile Quiz App</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Ứng dụng Quiz</title>
   </head>
   <body>
     <div id="quiz-container">
-      <h1>Quiz App</h1>
-      <input title="s" placeholder="s" type="file" onchange="previewFile()" />
-      <div id="question-counter">
-        <span id="current-question">1</span> /
-        <span id="total-questions"></span>
+      <div id="question-counter" class="rounded-indicator">
+        Câu <span id="current-question">0</span> /
+        <span id="total-questions">0</span>
       </div>
+      <h1>Ứng dụng Quiz</h1>
+      <label for="file-input" class="file-input-label">
+        Chọn tệp
+        <input id="file-input" type="file" onchange="previewFile()" />
+      </label>
       <div id="question"><p></p></div>
       <img
         id="question-image"
@@ -22,7 +31,7 @@
         style="display: none"
       />
       <div id="options"></div>
-      <button type="button" id="next-button">Next</button>
+      <button type="button" id="next-button">Tiếp theo</button>
       <div id="result" style="display: none"></div>
     </div>
 
