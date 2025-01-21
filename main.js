@@ -75,7 +75,7 @@ function previewFile() {
         console.log(question);
       }
     });
-    questions = parsedQuestions;
+    questions = getRandomElements(parsedQuestions);
     loadQuestion(questions);
     totalQuestionsElement.textContent = questions.length; // Update total questions
   };
