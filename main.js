@@ -65,12 +65,12 @@ function previewFile() {
         };
         question.question = lines[i + 1];
         question.options = [
+          lines[i + 2],
           lines[i + 3],
           lines[i + 4],
           lines[i + 5],
-          lines[i + 6],
         ];
-        question.answer = lines[i + 2];
+        question.answer = lines[i + 6];
         parsedQuestions.push(question);
         console.log(question);
       }
